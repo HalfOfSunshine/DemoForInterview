@@ -18,6 +18,7 @@
 		7DA2913D240BBFA800C4BA1A /* DemoForInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA2913C240BBFA800C4BA1A /* DemoForInterviewUITests.swift */; };
 		B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */; };
 		B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */; };
+		B2FBBDA1240FB4720081BB1D /* WeakifyDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBBDA0240FB4720081BB1D /* WeakifyDemoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManageVC.m; sourceTree = "<group>"; };
 		B2ACEF02240E4A9A00BD0697 /* NilPointerObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NilPointerObj.h; sourceTree = "<group>"; };
 		B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NilPointerObj.m; sourceTree = "<group>"; };
+		B2FBBD9F240FB4720081BB1D /* WeakifyDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakifyDemoVC.h; sourceTree = "<group>"; };
+		B2FBBDA0240FB4720081BB1D /* WeakifyDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakifyDemoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 		7DA2910E240BBFA700C4BA1A = {
 			isa = PBXGroup;
 			children = (
+				B2FBBD8E240F49710081BB1D /* Demo_2_RACweakify */,
 				7DA2914A240BBFC300C4BA1A /* Demo1_MemoryManage */,
 				7DA29119240BBFA700C4BA1A /* DemoForInterview */,
 				7DA29130240BBFA800C4BA1A /* DemoForInterviewTests */,
@@ -155,6 +159,15 @@
 			path = Demo1_MemoryManage;
 			sourceTree = "<group>";
 		};
+		B2FBBD8E240F49710081BB1D /* Demo_2_RACweakify */ = {
+			isa = PBXGroup;
+			children = (
+				B2FBBD9F240FB4720081BB1D /* WeakifyDemoVC.h */,
+				B2FBBDA0240FB4720081BB1D /* WeakifyDemoVC.m */,
+			);
+			path = Demo_2_RACweakify;
+			sourceTree = "<group>";
+		};
 		D0D18EC89F562DD175AFE3D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +182,6 @@
 				4B2BF3E36721FF65A64BF3A8 /* Pods-DemoForInterview.debug.xcconfig */,
 				763662467D3BA14A95D62E8B /* Pods-DemoForInterview.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -333,6 +345,7 @@
 			files = (
 				7DA2911F240BBFA700C4BA1A /* ViewController.swift in Sources */,
 				7DA2911B240BBFA700C4BA1A /* AppDelegate.swift in Sources */,
+				B2FBBDA1240FB4720081BB1D /* WeakifyDemoVC.m in Sources */,
 				B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */,
 				B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */,
 				7DA2911D240BBFA700C4BA1A /* SceneDelegate.swift in Sources */,
