@@ -9,9 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate	 {
-
+    open var dataArray:Array<String>!
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        dataArray = ["内存管理","其它"]
 		// Do any additional setup after loading the view.
 		self.setUI();
 	}
@@ -20,18 +22,28 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 		view.addSubview(tv)
 		tv.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
 		tv.dataSource = self;
+        tv.delegate = self;
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 20
+        return dataArray.count
 	}
 
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
-		cell.textLabel?.text = "hello ~~~ \(indexPath.row)"
+		cell.textLabel?.text = "\(dataArray[indexPath.row])"
 		return cell
 		
 	}
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch dataArray[indexPath.row] {
+        case "内存管理":
+            let vc = MemoryManageVC();
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            fatalError("没有这个操作类型...")
+        }
+    }
 }
 

@@ -15,6 +15,8 @@
 		7DA29127240BBFA800C4BA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA29125240BBFA800C4BA1A /* LaunchScreen.storyboard */; };
 		7DA29132240BBFA800C4BA1A /* DemoForInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA29131240BBFA800C4BA1A /* DemoForInterviewTests.swift */; };
 		7DA2913D240BBFA800C4BA1A /* DemoForInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA2913C240BBFA800C4BA1A /* DemoForInterviewUITests.swift */; };
+		B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */; };
+		B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		7DA29138240BBFA800C4BA1A /* DemoForInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoForInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA2913C240BBFA800C4BA1A /* DemoForInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoForInterviewUITests.swift; sourceTree = "<group>"; };
 		7DA2913E240BBFA800C4BA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2ACEEFE240E3A7500BD0697 /* DemoForInterview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoForInterview-Bridging-Header.h"; sourceTree = "<group>"; };
+		B2ACEEFF240E3A7600BD0697 /* MemoryManageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManageVC.h; sourceTree = "<group>"; };
+		B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManageVC.m; sourceTree = "<group>"; };
+		B2ACEF02240E4A9A00BD0697 /* NilPointerObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NilPointerObj.h; sourceTree = "<group>"; };
+		B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NilPointerObj.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +139,11 @@
 		7DA2914A240BBFC300C4BA1A /* Demo1_MemoryManage */ = {
 			isa = PBXGroup;
 			children = (
+				B2ACEEFF240E3A7600BD0697 /* MemoryManageVC.h */,
+				B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */,
+				B2ACEEFE240E3A7500BD0697 /* DemoForInterview-Bridging-Header.h */,
+				B2ACEF02240E4A9A00BD0697 /* NilPointerObj.h */,
+				B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */,
 			);
 			path = Demo1_MemoryManage;
 			sourceTree = "<group>";
@@ -204,6 +216,7 @@
 				TargetAttributes = {
 					7DA29116240BBFA700C4BA1A = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1130;
 					};
 					7DA2912C240BBFA800C4BA1A = {
 						CreatedOnToolsVersion = 11.1;
@@ -269,6 +282,8 @@
 			files = (
 				7DA2911F240BBFA700C4BA1A /* ViewController.swift in Sources */,
 				7DA2911B240BBFA700C4BA1A /* AppDelegate.swift in Sources */,
+				B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */,
+				B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */,
 				7DA2911D240BBFA700C4BA1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9SCBD8ZRE;
 				INFOPLIST_FILE = DemoForInterview/Info.plist;
@@ -451,6 +467,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kkmm.DemoForInterview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo1_MemoryManage/DemoForInterview-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9SCBD8ZRE;
 				INFOPLIST_FILE = DemoForInterview/Info.plist;
@@ -469,6 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kkmm.DemoForInterview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo1_MemoryManage/DemoForInterview-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
