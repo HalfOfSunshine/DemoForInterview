@@ -1,0 +1,3 @@
+target 'DemoForInterview' do
+  pod 'ReactiveObjC'
+end
