@@ -3,3 +3,4 @@
 //
 
 #import "MemoryManageVC.h"
+#import "WeakifyDemoVC.h"

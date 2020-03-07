@@ -13,7 +13,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        dataArray = ["内存管理","其它"]
+        dataArray = ["内存管理","weakify原理","其它"]
 		// Do any additional setup after loading the view.
 		self.setUI();
 	}
@@ -37,10 +37,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 		
 	}
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         switch dataArray[indexPath.row] {
         case "内存管理":
             let vc = MemoryManageVC();
             self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "weakify原理":
+           let vc = WeakifyDemoVC();
+           self.navigationController?.pushViewController(vc, animated: true)
+            
         default:
             fatalError("没有这个操作类型...")
         }

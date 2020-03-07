@@ -18,6 +18,7 @@
 		7DA2913D240BBFA800C4BA1A /* DemoForInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA2913C240BBFA800C4BA1A /* DemoForInterviewUITests.swift */; };
 		B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */; };
 		B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */; };
+		B2B02E30241399D300A98A81 /* Persion.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B02E2F241399D300A98A81 /* Persion.m */; };
 		B2FBBDA1240FB4720081BB1D /* WeakifyDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBBDA0240FB4720081BB1D /* WeakifyDemoVC.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManageVC.m; sourceTree = "<group>"; };
 		B2ACEF02240E4A9A00BD0697 /* NilPointerObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NilPointerObj.h; sourceTree = "<group>"; };
 		B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NilPointerObj.m; sourceTree = "<group>"; };
+		B2B02E2E241399D300A98A81 /* Persion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persion.h; sourceTree = "<group>"; };
+		B2B02E2F241399D300A98A81 /* Persion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Persion.m; sourceTree = "<group>"; };
 		B2FBBD9F240FB4720081BB1D /* WeakifyDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakifyDemoVC.h; sourceTree = "<group>"; };
 		B2FBBDA0240FB4720081BB1D /* WeakifyDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakifyDemoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +167,8 @@
 			children = (
 				B2FBBD9F240FB4720081BB1D /* WeakifyDemoVC.h */,
 				B2FBBDA0240FB4720081BB1D /* WeakifyDemoVC.m */,
+				B2B02E2E241399D300A98A81 /* Persion.h */,
+				B2B02E2F241399D300A98A81 /* Persion.m */,
 			);
 			path = Demo_2_RACweakify;
 			sourceTree = "<group>";
@@ -348,6 +353,7 @@
 				B2FBBDA1240FB4720081BB1D /* WeakifyDemoVC.m in Sources */,
 				B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */,
 				B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */,
+				B2B02E30241399D300A98A81 /* Persion.m in Sources */,
 				7DA2911D240BBFA700C4BA1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

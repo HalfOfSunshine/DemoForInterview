@@ -22,6 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self setTitle:@"内存管理"];
+
 //    [self testZombie]; //野指针
     [self testNilPointer];//空指针
 }
