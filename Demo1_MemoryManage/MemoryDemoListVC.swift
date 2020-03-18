@@ -34,12 +34,12 @@ class MemoryDemoListVC: UIViewController,UITableViewDelegate,UITableViewDataSour
         return dataSource.count;
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch dataSource[indexPath.row] {
-        case "指针，僵尸对象":
+        switch indexPath.row {
+        case 0:
             let vc = MemoryManageVC();
             self.navigationController?.pushViewController(vc, animated: true)
             
-        case "堆，栈，内存布局，taggedPointer":
+        case 1:
            let vc = DemoForTaggerPointer();
            self.navigationController?.pushViewController(vc, animated: true)
             
