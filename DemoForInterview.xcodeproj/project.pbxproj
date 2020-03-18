@@ -16,6 +16,8 @@
 		7DA29127240BBFA800C4BA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA29125240BBFA800C4BA1A /* LaunchScreen.storyboard */; };
 		7DA29132240BBFA800C4BA1A /* DemoForInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA29131240BBFA800C4BA1A /* DemoForInterviewTests.swift */; };
 		7DA2913D240BBFA800C4BA1A /* DemoForInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA2913C240BBFA800C4BA1A /* DemoForInterviewUITests.swift */; };
+		B293B8482420D6640069CBF5 /* DemoForTaggerPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = B293B8472420D6640069CBF5 /* DemoForTaggerPointer.m */; };
+		B293B84A2420D6D60069CBF5 /* MemoryDemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B293B8492420D6D60069CBF5 /* MemoryDemoListVC.swift */; };
 		B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */; };
 		B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */; };
 		B2FBBDA1240FB4720081BB1D /* WeakifyDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBBDA0240FB4720081BB1D /* WeakifyDemoVC.m */; };
@@ -56,6 +58,9 @@
 		7DA29138240BBFA800C4BA1A /* DemoForInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoForInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA2913C240BBFA800C4BA1A /* DemoForInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoForInterviewUITests.swift; sourceTree = "<group>"; };
 		7DA2913E240BBFA800C4BA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B293B8462420D6640069CBF5 /* DemoForTaggerPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoForTaggerPointer.h; sourceTree = "<group>"; };
+		B293B8472420D6640069CBF5 /* DemoForTaggerPointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoForTaggerPointer.m; sourceTree = "<group>"; };
+		B293B8492420D6D60069CBF5 /* MemoryDemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDemoListVC.swift; sourceTree = "<group>"; };
 		B2ACEEFE240E3A7500BD0697 /* DemoForInterview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoForInterview-Bridging-Header.h"; sourceTree = "<group>"; };
 		B2ACEEFF240E3A7600BD0697 /* MemoryManageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManageVC.h; sourceTree = "<group>"; };
 		B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManageVC.m; sourceTree = "<group>"; };
@@ -153,9 +158,12 @@
 			children = (
 				B2ACEEFF240E3A7600BD0697 /* MemoryManageVC.h */,
 				B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */,
-				B2ACEEFE240E3A7500BD0697 /* DemoForInterview-Bridging-Header.h */,
 				B2ACEF02240E4A9A00BD0697 /* NilPointerObj.h */,
 				B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */,
+				B2ACEEFE240E3A7500BD0697 /* DemoForInterview-Bridging-Header.h */,
+				B293B8462420D6640069CBF5 /* DemoForTaggerPointer.h */,
+				B293B8472420D6640069CBF5 /* DemoForTaggerPointer.m */,
+				B293B8492420D6D60069CBF5 /* MemoryDemoListVC.swift */,
 			);
 			path = Demo1_MemoryManage;
 			sourceTree = "<group>";
@@ -355,7 +363,9 @@
 				7DA2911B240BBFA700C4BA1A /* AppDelegate.swift in Sources */,
 				B2FBBDA1240FB4720081BB1D /* WeakifyDemoVC.m in Sources */,
 				B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */,
+				B293B84A2420D6D60069CBF5 /* MemoryDemoListVC.swift in Sources */,
 				B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */,
+				B293B8482420D6640069CBF5 /* DemoForTaggerPointer.m in Sources */,
 				7DA2911D240BBFA700C4BA1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

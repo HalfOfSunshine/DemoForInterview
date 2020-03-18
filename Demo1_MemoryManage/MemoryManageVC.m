@@ -27,6 +27,39 @@
 
 //    [self testZombie]; //野指针
     [self testNilPointer];//空指针
+  
+    [self testStorageZone];
+}
+-(void)testStorageZone{
+    char *p = "abc";//p在栈区：0x7ffee3b3af28，aaa在常量区：0x101746670
+    NSLog(@"指针p地址值：%p",&p);//p在栈区：0x7ffee3b3af28
+    NSLog(@"指针p存储的地址值：%p",p);//p指向的‘aaa’在常量区：0x101746670
+    NSLog(@"pp存储的地址有+1：%p,p+1的值为：%s",p+1,p+1);
+
+    char q[] = "def";
+    NSLog(@"q地址值：%p 就是q存储的内存的首地址：%p",&q,q);
+    NSLog(@"q有q+1：%p,q+1的值为：%s",q+1,q+1);
+    
+    int i;//i存放的就是10,9,10，而不是什么指针。i这个变量名在代码区中。i的内存在栈中:0x7ffee3b3af20。给i赋值,就是把0x7ffee3b3af20存储的值变成10，9，10
+    NSLog(@"int i存储的地址值：%p",&i);
+    i = 10;
+    NSLog(@"int i存储的地址值：%p",&i);//
+    i=9;
+    NSLog(@"int i存储的地址值：%p",&i);//
+    i=10;
+    NSLog(@"int i存储的地址值：%p",&i);//
+
+    NSObject *obj = [[NSObject alloc] init];
+    NSLog(@"栈中的指针obj自身的地址：%p",&obj);
+    NSLog(@"obj指针所指向的堆区的内存地址：%p",obj);
+    
+    UIView *view = [[UIView alloc] init];
+    NSLog(@"栈中的指针view自身的地址：%p",&view);
+    NSLog(@"view的指针指向了栈内存地址：%p",view);//为啥UIView指向了一个栈内存？？？？？
+    
+    NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain code:0 userInfo:nil];
+    NSLog(@"栈中的指针error自身的地址：%p",&error);
+    NSLog(@"error的指针指向了堆内存地址：%p",error);
 }
 
 //    野指针僵尸对象简单举例 需MRC环境

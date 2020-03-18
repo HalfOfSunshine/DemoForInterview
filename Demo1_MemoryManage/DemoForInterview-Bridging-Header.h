@@ -4,3 +4,6 @@
 
 #import "MemoryManageVC.h"
 #import "WeakifyDemoVC.h"
+#import "DemoForTaggerPointer.h"
+
+

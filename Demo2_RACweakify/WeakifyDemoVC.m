@@ -21,10 +21,12 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self setTitle:@"weakify原理"];
+    
+    Zlog(@"标题是%@",self.title);
+
     NSString *AB = @"我是连接函数##";
     Zlog(@"打印连接函数:AB%@",Link(A, B));
-    Zlog(@"标题是%@",self.title);
-    [self setUI];
+    
 //    ##为连接符，A##B即为AB; ...和 __VA_ARGS__为一对 define中相互对应，表示多个参数
 //    @ weakify(self);
 //          ↓
@@ -76,17 +78,6 @@
 //    metamacro_foreach_cxt1(rac_weakify_,, __weak, self) 回到41行
 }
 
--(void)setUI{
-    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 30)];
-    [button setTitle:@"test_weakify" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-//    @weakify(self);
-//    [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-//        @strongify(self);
-//        [self.navigationController popViewControllerAnimated:YES];
-//    }];
-}
 
 /*
 #pragma mark - Navigation

@@ -40,7 +40,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         tableView.deselectRow(at: indexPath, animated: true)
         switch dataArray[indexPath.row] {
         case "内存管理":
-            let vc = MemoryManageVC();
+            let vc = MemoryDemoListVC();
             self.navigationController?.pushViewController(vc, animated: true)
             
         case "weakify原理":
