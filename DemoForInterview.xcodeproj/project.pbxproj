@@ -18,6 +18,7 @@
 		7DA2913D240BBFA800C4BA1A /* DemoForInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA2913C240BBFA800C4BA1A /* DemoForInterviewUITests.swift */; };
 		B293B8482420D6640069CBF5 /* DemoForTaggerPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = B293B8472420D6640069CBF5 /* DemoForTaggerPointer.m */; };
 		B293B84A2420D6D60069CBF5 /* MemoryDemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B293B8492420D6D60069CBF5 /* MemoryDemoListVC.swift */; };
+		B2AC09D5242228A1003AB6E4 /* WeakPrincipeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AC09D4242228A1003AB6E4 /* WeakPrincipeVC.m */; };
 		B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */; };
 		B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ACEF03240E4A9A00BD0697 /* NilPointerObj.m */; };
 		B2FBBDA1240FB4720081BB1D /* WeakifyDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBBDA0240FB4720081BB1D /* WeakifyDemoVC.m */; };
@@ -61,6 +62,8 @@
 		B293B8462420D6640069CBF5 /* DemoForTaggerPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoForTaggerPointer.h; sourceTree = "<group>"; };
 		B293B8472420D6640069CBF5 /* DemoForTaggerPointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoForTaggerPointer.m; sourceTree = "<group>"; };
 		B293B8492420D6D60069CBF5 /* MemoryDemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDemoListVC.swift; sourceTree = "<group>"; };
+		B2AC09D3242228A1003AB6E4 /* WeakPrincipeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakPrincipeVC.h; sourceTree = "<group>"; };
+		B2AC09D4242228A1003AB6E4 /* WeakPrincipeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakPrincipeVC.m; sourceTree = "<group>"; };
 		B2ACEEFE240E3A7500BD0697 /* DemoForInterview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoForInterview-Bridging-Header.h"; sourceTree = "<group>"; };
 		B2ACEEFF240E3A7600BD0697 /* MemoryManageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManageVC.h; sourceTree = "<group>"; };
 		B2ACEF00240E3A7600BD0697 /* MemoryManageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManageVC.m; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		7DA2910E240BBFA700C4BA1A = {
 			isa = PBXGroup;
 			children = (
+				B2AC09D22422211B003AB6E4 /* Demo4_ReferenceCounting */,
 				B2BBE5B924209B7900A746B6 /* Demo3_NSOperation */,
 				B2FBBD8E240F49710081BB1D /* Demo2_RACweakify */,
 				7DA2914A240BBFC300C4BA1A /* Demo1_MemoryManage */,
@@ -166,6 +170,15 @@
 				B293B8492420D6D60069CBF5 /* MemoryDemoListVC.swift */,
 			);
 			path = Demo1_MemoryManage;
+			sourceTree = "<group>";
+		};
+		B2AC09D22422211B003AB6E4 /* Demo4_ReferenceCounting */ = {
+			isa = PBXGroup;
+			children = (
+				B2AC09D3242228A1003AB6E4 /* WeakPrincipeVC.h */,
+				B2AC09D4242228A1003AB6E4 /* WeakPrincipeVC.m */,
+			);
+			path = Demo4_ReferenceCounting;
 			sourceTree = "<group>";
 		};
 		B2BBE5B924209B7900A746B6 /* Demo3_NSOperation */ = {
@@ -365,6 +378,7 @@
 				B2ACEF04240E4A9A00BD0697 /* NilPointerObj.m in Sources */,
 				B293B84A2420D6D60069CBF5 /* MemoryDemoListVC.swift in Sources */,
 				B2ACEF01240E3A7600BD0697 /* MemoryManageVC.m in Sources */,
+				B2AC09D5242228A1003AB6E4 /* WeakPrincipeVC.m in Sources */,
 				B293B8482420D6640069CBF5 /* DemoForTaggerPointer.m in Sources */,
 				7DA2911D240BBFA700C4BA1A /* SceneDelegate.swift in Sources */,
 			);
